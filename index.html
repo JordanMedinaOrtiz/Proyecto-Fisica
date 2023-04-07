@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet"  type="text/css" href="style.css"/>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <title>Conversiones y prefijos</title>
+</head>
+<body class="hidden">
+    <div class="centrado" id="onload">
+        <div class="lds-facebook">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <div id="upslp">
+        <h1>Universidad Politecnica de San Luis Potosí</h1>
+    </div>
+    <div id="content">
+        <form action="" >
+            <div class="selectbox">
+                <div class="select" id="select">
+                    <div class="content-select">
+                        <h1 class="titulo">Selecciona magnitud: </h1>
+                        <p class="descripcion">Una magnitud física es una cantidad medible de un sistema físico a la que se le pueden asignar distintos valores como resultado de una medición o una relación de medidas.</p>
+                    </div>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <div class="options" id="options">
+                    <a href="#" class="option" id="valLongitud">
+                        <div class="content-option">
+                            <img src="https://definicion.de/wp-content/uploads/2009/10/longitud.png" alt="">
+                            <div class="text">
+                                <h2 class="titulo">Longitud</h2>
+                                <p class="descripcion">Magnitud física que expresa la distancia entre dos puntos, y cuya unidad en el sistema internacional es el metro (m).</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="option" id="valMasa">
+                        <div class="content-option">
+                            <img src="http://lamateria.weebly.com/uploads/5/8/1/2/58126035/578744222.gif?355" alt="">
+                            <div class="text">
+                                <h2 class="titulo">Masa</h2>
+                                <p class="descripcion">Magnitud física que expresa la cantidad de materia de un cuerpo, medida por la inercia de este, y cuya unidad en el sistema internacional es el kilogramo (kg).</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="option" id="valTiempo">
+                        <div class="content-option">
+                            <img src="https://images.vexels.com/media/users/3/151571/isolated/lists/741b7da0be25d80eb156fba7cc350731-reloj-despertador-sonando-doodle.png" alt="">
+                            <div class="text">
+                                <h2 class="titulo">Tiempo</h2>
+                                <p class="descripcion">Se llama tiempo a una magnitud que sirve para medir la duración o la separación de uno o más acontecimientos y cuya unidad en el sistema internacional es el segundo (s).</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="option" id="valFuerza">
+                        <div class="content-option">
+                            <img src="https://static.vecteezy.com/system/resources/previews/001/205/793/non_2x/weight-lifting-png.png" alt="">
+                            <div class="text">
+                                <h2 class="titulo">Fuerza</h2>
+                                <p class="descripcion">La fuerza es una magnitud vectorial que mide la intensidad del intercambio de momento lineal entre dos cuerpos y cuya unidad en el sistema internacional es el Newton (N).</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="option" id="valPresion">
+                        <div class="content-option">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2562/2562368.png" alt="">
+                            <div class="text">
+                                <h2 class="titulo">Presión</h2>
+                                <p class="descripcion">Magnitud que se define como la derivada de la fuerza con respecto al área y cuyas unidades en el sistema internacional son el pascal (Pa), Atmósfera(atm), Newton por metros cuadrados (N/m²), Pound-force/sqare inch(PSI) y el Bar.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="option" id="valPotencia">
+                        <div class="content-option">
+                            <img src="https://hosrojas.files.wordpress.com/2015/05/potenciacap2.gif" alt="">
+                            <div class="text">
+                                <h2 class="titulo">Potencia</h2>
+                                <p class="descripcion">Es una cantidad determinada de trabajo efectuado de alguna manera en una unidad de tiempo determinada y cuya unidad en el sistema internacional es el vatio (W).</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <input type="hidden" name="medida" id="input-medida" value="">
+        </form>
+    </div>
+
+    <div id="unidades">
+        <div class="tabla" id="longitud">
+            <div class="magnitud">Longitud</div>
+            <div class="unidades">Pulgada(in) a metros(m)</div>
+            <div class="conversion">1 in = 0.025 m</div>
+            <div class="unidades">Pie(ft) a metros(m)</div>
+            <div class="conversion">1 ft = 0.305 m</div>
+            <div class="unidades">Yarda(yd) a metros(m)</div>
+            <div class="conversion">1 yd = 0.914 m</div>
+            <div class="unidades">Braza a metros(m)</div>
+            <div class="conversion">1 braza = 1.829 m</div>
+            <div class="unidades">Milla a metros(m)</div>
+            <div class="conversion">1 milla = 1609.340 m</div>
+        </div>
+        <div class="tabla" id="preLongitud">
+            <div class="magnitud">Metros</div>
+            <div class="unidades">Kilo (k)</div>
+            <div class="conversion">0.001 kilometros</div>
+            <div class="unidades">Hecto (k)</div>
+            <div class="conversion">0.01 hectometros</div>
+            <div class="unidades">Deca (da)</div>
+            <div class="conversion">0.1 decametros</div>
+            <div class="unidades">Sin prefijo</div>
+            <div class="conversion">1 metro</div>
+            <div class="unidades">Deci (d)</div>
+            <div class="conversion">10 decimetros</div>
+            <div class="unidades">Centi (c)</div>
+            <div class="conversion">100 centimetros</div>
+            <div class="unidades">Mili (m)</div>
+            <div class="conversion">1000 milimetros</div>
+        </div>
+        <div class="tabla" id="masa">
+            <div class="magnitud">Masa</div>
+            <div class="unidades">Onza(oz) a kilogramo(kg)</div>
+            <div class="conversion">1 oz = 0.028 kg</div>
+            <div class="unidades">Libra(lb) a kilogramo(kg)</div>
+            <div class="conversion">1 lb = 0.454 kg</div>
+        </div>
+        <div class="tabla" id="preMasa">
+            <div class="magnitud">Kilogramos</div>
+            <div class="unidades">Kilo (k)</div>
+            <div class="conversion">1 kilogramo</div>
+            <div class="unidades">Hecto (k)</div>
+            <div class="conversion">10 hectogramos</div>
+            <div class="unidades">Deca (da)</div>
+            <div class="conversion">100 decagramos</div>
+            <div class="unidades">Sin prefijo</div>
+            <div class="conversion">1 kilogramo</div>
+            <div class="unidades">Deci (d)</div>
+            <div class="conversion">10000 decigramos</div>
+            <div class="unidades">Centi (c)</div>
+            <div class="conversion">100000 centigramos</div>
+            <div class="unidades">Mili (m)</div>
+            <div class="conversion">1000000 miligramos</div>
+        </div>
+        <div class="tabla" id="tiempo">
+            <div class="magnitud">Tiempo</div>
+            <div class="unidades">Año a segundos(s)</div>
+            <div class="conversion">1 año = 31.556X10<sup>6</sup> s</div>
+            <div class="unidades">Día a segundos(s)</div>
+            <div class="conversion">1 día = 86400.000 s</div>
+            <div class="unidades">Hora a segundos(s)</div>
+            <div class="conversion">1 h = 3600.000 s</div>
+            <div class="unidades">Minuto a segundos(s)</div>
+            <div class="conversion">1 min = 60.000 s</div>
+            <div class="unidades">Hercio(HZ) a segundos(s)</div>
+            <div class="conversion">1 HZ = 1.000 s<sup> -1</sup></div>
+        </div>
+        <div class="tabla" id="preTiempo">
+            <div class="magnitud">Segundos</div>
+            <div class="unidades">Kilo (k)</div>
+            <div class="conversion">0.001 kilosegundos</div>
+            <div class="unidades">Hecto (k)</div>
+            <div class="conversion">0.01 hectosegundos</div>
+            <div class="unidades">Deca (da)</div>
+            <div class="conversion">0.1 decasegundos</div>
+            <div class="unidades">Sin prefijo</div>
+            <div class="conversion">1 segundo</div>
+            <div class="unidades">Deci (d)</div>
+            <div class="conversion">10 decisegundos</div>
+            <div class="unidades">Centi (c)</div>
+            <div class="conversion">100 centisegundos</div>
+            <div class="unidades">Mili (m)</div>
+            <div class="conversion">1000 milisegundos</div>
+        </div>
+        <div class="tabla" id="fuerza">
+            <div class="magnitud">Fuerza</div>
+            <div class="unidades">Libra fuerza(lbf) a Newton(N)</div>
+            <div class="conversion">1 lbf = 4.448 N</div>
+            <div class="unidades">Poundal(pdl) a Newton(N)</div>
+            <div class="conversion">1 pdl = 0.138 N</div>
+        </div>
+        <div class="tabla" id="preFuerza">
+            <div class="magnitud">Newtons</div>
+            <div class="unidades">Kilo (k)</div>
+            <div class="conversion">0.001 kilonewtons</div>
+            <div class="unidades">Hecto (k)</div>
+            <div class="conversion">0.01 hectonewtons</div>
+            <div class="unidades">Deca (da)</div>
+            <div class="conversion">0.1 decanewtons</div>
+            <div class="unidades">Sin prefijo</div>
+            <div class="conversion">1 Newton</div>
+            <div class="unidades">Deci (d)</div>
+            <div class="conversion">10 decinewtons</div>
+            <div class="unidades">Centi (c)</div>
+            <div class="conversion">100 centinewtons</div>
+            <div class="unidades">Mili (m)</div>
+            <div class="conversion">1000 milinewtons</div>
+        </div>
+        <div class="tabla" id="presion">
+            <div class="magnitud">Presión</div>
+            <div class="unidades">Libra por pulgada al cuadrado(lbf/in<sup>2</sup>) a Pascal(Pa)</div>
+            <div class="conversion">1 lbf/in<sup>2</sup> = 6896.550 Pa</div>
+            <div class="unidades">Libra por pulgada al cuadrado(lbf/in<sup>2</sup>) a Atmósfera(atm)</div>
+            <div class="conversion">1 lbf/in<sup>2</sup> = 0.068 atm</div>
+            <div class="unidades">Libra por pulgada al cuadrado(lbf/in<sup>2</sup>) a Newton por metros cuadrados(N/m<sup>2</sup>)</div>
+            <div class="conversion">1 lbf/in<sup>2</sup> = 6896.550 N/m²</div>
+            <div class="unidades">Libra por pulgada al cuadrado(lbf/in<sup>2</sup>) a Pound-force/sqare inch(PSI)</div>
+            <div class="conversion">1 lbf/in<sup>2</sup> = 0.999 PSI</div>
+            <div class="unidades">Libra por pulgada al cuadrado(lbf/in<sup>2</sup>) a Bar</div>
+            <div class="conversion">1 lbf/in<sup>2</sup> = 0.069 bar</div>
+        </div>
+        <div class="tabla" id="prePresion">
+            <div class="magnitud">Pasacales</div>
+            <div class="unidades">Kilo (k)</div>
+            <div class="conversion">0.001 kilopascales</div>
+            <div class="unidades">Hecto (k)</div>
+            <div class="conversion">0.01 hectopascales</div>
+            <div class="unidades">Deca (da)</div>
+            <div class="conversion">0.1 decapascales</div>
+            <div class="unidades">Sin prefijo</div>
+            <div class="conversion">1 Pascal</div>
+            <div class="unidades">Deci (d)</div>
+            <div class="conversion">10 decipascales</div>
+            <div class="unidades">Centi (c)</div>
+            <div class="conversion">100 centipascales</div>
+            <div class="unidades">Mili (m)</div>
+            <div class="conversion">1000 milipascales</div>
+        </div>
+        <div class="tabla" id="potencia">
+            <div class="magnitud">Potencia</div>
+            <div class="unidades">HosePower(HP) a vatio(W)</div>
+            <div class="conversion">1 HP = 745.700 W</div>
+        </div>
+        <div class="tabla" id="prePotencia">
+            <div class="magnitud">Vatios</div>
+            <div class="unidades">Kilo (k)</div>
+            <div class="conversion">1000 kilovatios</div>
+            <div class="unidades">Hecto (k)</div>
+            <div class="conversion">100 hectovatios</div>
+            <div class="unidades">Deca (da)</div>
+            <div class="conversion">10 decavatios</div>
+            <div class="unidades">Sin prefijo</div>
+            <div class="conversion">1 Vatio</div>
+            <div class="unidades">Deci (d)</div>
+            <div class="conversion">0.1 decivatios</div>
+            <div class="unidades">Centi (c)</div>
+            <div class="conversion">0.01 centivatios</div>
+            <div class="unidades">Mili (m)</div>
+            <div class="conversion">0.001 milivatios</div>
+        </div>
+    </div>
+
+    <center>
+        <div id="videos">
+            <h1 class="titulo">Sistema ingles vs sistema internacional</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/H27dO9Qi82I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h1 class="titulo">¿Cómo hacer conversiones de unidades?</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/RnLHWguK0kE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h1 class="titulo">¿Qué son los prefijos?</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/eUA9k0Ce_qE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </center>
+
+    <center>
+        <div id="practica">
+            <h1 class="titulo">Refuerza tus conocimientos realizando los siguientes ejercicios:</h1>
+            <div id="ejercicios">
+                <label>Cuantos metros equivale una pulgada: </label>
+                <input type="number" id="ej1"><br>
+                <label>Cuantos kilogramos equivale una onza: </label>
+                <input type="number" id="ej2"><br>
+                <label>Cuantos segundos equivale un año: </label>
+                <input type="number" id="ej3"><br>
+                <label>Cuantos newtons equivale un Poundal: </label>
+                <input type="number" id="ej4"><br>
+                <label>Cuantos pascales equivale una libra por pulgada al cuadrado: </label>
+                <input type="number" id="ej5"><br>
+                <label>Cuantos vatios equivale un HosePower: </label>
+                <input type="number" id="ej6"><br>
+            </div>
+            <div id="ejercicios">
+                <label>Convierte 3 millas a metros: </label>
+                <input type="number" id="ej7"><br>
+                <label>Convierte 56 metros a pies: </label>
+                <input type="number" id="ej8"><br>
+                <label>Convierte 24 libras a kilogramos: </label>
+                <input type="number" id="ej9"><br>
+                <label>Convierte 124 onzas a kilogramos: </label>
+                <input type="number" id="ej10"><br>
+                <label>¿Cuantos segundos se tardo Jordan en llegar a su casa si camino por 3 horas? </label>
+                <input type="number" id="ej11"><br>
+                <label>Si carlos cumple años en 5 dias, ¿Cuántos segundos le falta para su cumpleaños? </label>
+                <input type="number" id="ej12"><br>
+                <label>Convierte 5.3 libras fuerza a newtons: </label>
+                <input type="number" id="ej13"><br>
+                <label>Convierte 71 libra por pulgada al cuadrado a bars: </label>
+                <input type="number" id="ej14"><br>
+                <label>Axel compro un foco de 55 vatios, ¿Cuantos hosepowers tiene el foco?</label>
+                <input type="number" id="ej15"><br>
+            </div>
+            <div id="ejercicios">
+                <label>Cuanto equivale 1 hectometro: </label>
+                <input type="number" id="ej16"><br>
+                <label>Cuanto equivale 1 decagramo: </label>
+                <input type="number" id="ej17"><br>
+                <label>Cuanto equivale 1 milisegundo: </label>
+                <input type="number" id="ej18"><br>
+                <label>Cuanto equivale 1 kilonewton: </label>
+                <input type="number" id="ej19"><br>
+                <label>Cuanto equivale 1 decipascal: </label>
+                <input type="number" id="ej20"><br>
+                <label>Cuanto equivale 1 centivatio: </label>
+                <input type="number" id="ej21"><br>
+            </div>
+        </div>
+    </center>
+
+    <div id="calLongitud">
+        <form action="" >
+            <div class="selectbox">
+                <div class="seleccion" id="seleccion">
+                    <div class="content-seleccion">
+                        <h1 class="titulo">Selecciona la unidad a convertir a Metro: </h1>
+                    </div>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <div class="opciones" id="opciones">
+                    <a href="#" class="opcion" id="calPulgada">
+                        <div class="content-opcion">
+                            <img src="https://definicion.de/wp-content/uploads/2009/10/longitud.png" alt="">
+                            <div class="text">
+                                <h2 class="titulo">Pulgada (in)</h2>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="opcion" id="calPie">
+                        <div class="content-opcion">
+                            <img src="https://definicion.de/wp-content/uploads/2009/10/longitud.png" alt="">
+                            <div class="text">
+                                <h2 class="titulo">Pie (ft)</h2>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="opcion" id="calYarda">
+                        <div class="content-opcion">
+                            <img src="https://definicion.de/wp-content/uploads/2009/10/longitud.png" alt="">
+                            <div class="text">
+                                <h2 class="titulo">Yarda (yd)</h2>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="opcion" id="calBraza">
+                        <div class="content-opcion">
+                            <img src="https://definicion.de/wp-content/uploads/2009/10/longitud.png" alt="">
+                            <div class="text">
+                                <h2 class="titulo">Braza</h2>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="opcion" id="calMilla">
+                        <div class="content-opcion">
+                            <img src="https://definicion.de/wp-content/uploads/2009/10/longitud.png" alt="">
+                            <div class="text">
+                                <h2 class="titulo">Milla</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <input type="hidden" name="medida" id="input-medida" value="">
+        </form>
+    </div>
+
+    <div id="calMasa">
+        <form action="" >
+            <div class="selectbox">
+                <div class="seleccionM" id="seleccionM">
+                    <div class="content-seleccionM">
+                        <h1 class="titulo">Selecciona la unidad a convertir a kilogramo: </h1>
+                    </div>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <div class="opcionesM" id="opcionesM">
+                    <a href="#" class="opcionM" id="calOnza">
+                        <div class="content-opcionM">
+                            <img src="http://lamateria.weebly.com/uploads/5/8/1/2/58126035/578744222.gif?355" alt="">
+                            <div class="text">
+                                <h2 class="titulo">Onza (oz)</h2>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="opcionM" id="calLibra">
+                        <div class="content-opcionM">
+                            <img src="http://lamateria.weebly.com/uploads/5/8/1/2/58126035/578744222.gif?355" alt="">
+                            <div class="text">
+                                <h2 class="titulo">Libra (lb)</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <input type="hidden" name="medida" id="input-medida" value="">
+        </form>
+    </div>
+
+    <div id="calTiempo">
+        <form action="" >
+            <div class="selectbox">
+                <div class="seleccionT" id="seleccionT">
+                    <div class="content-seleccionT">
+                        <h1 class="titulo">Selecciona la unidad a convertir a Segundos: </h1>
+                    </div>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <div class="opcionesT" id="opcionesT">
+                    <a href="#" class="opcionT" id="calAño">
+                        <div class="content-opcionT">
+                            <img src="https://images.vexels.com/media/users/3/151571/isolated/lists/741b7da0be25d80eb156fba7cc350731-reloj-despertador-sonando-doodle.png" alt="">
+                            <div class="text">
+                                <h2 class="titulo">Año</h2>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="opcionT" id="calDia">
+                        <div class="content-opcionT">
+                            <img src="https://images.vexels.com/media/users/3/151571/isolated/lists/741b7da0be25d80eb156fba7cc350731-reloj-despertador-sonando-doodle.png" alt="">
+                            <div class="text">
+                                <h2 class="titulo">Dia</h2>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="opcionT" id="calHora">
+                        <div class="content-opcionT">
+                            <img src="https://images.vexels.com/media/users/3/151571/isolated/lists/741b7da0be25d80eb156fba7cc350731-reloj-despertador-sonando-doodle.png" alt="">
+                            <div class="text">
+                                <h2 class="titulo">Hora</h2>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="opcionT" id="calMin">
+                        <div class="content-opcionT">
+                            <img src="https://images.vexels.com/media/users/3/151571/isolated/lists/741b7da0be25d80eb156fba7cc350731-reloj-despertador-sonando-doodle.png" alt="">
+                            <div class="text">
+                                <h2 class="titulo">Minuto</h2>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="opcionT" id="calHZ">
+                        <div class="content-opcionT">
+                            <img src="https://images.vexels.com/media/users/3/151571/isolated/lists/741b7da0be25d80eb156fba7cc350731-reloj-despertador-sonando-doodle.png" alt="">
+                            <div class="text">
+                                <h2 class="titulo">Hercio (HZ)</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <input type="hidden" name="medida" id="input-medida" value="">
+        </form>
+    </div>
+
+    <div id="calFuerza">
+        <form action="" >
+            <div class="selectbox">
+                <div class="seleccionF" id="seleccionF">
+                    <div class="content-seleccionF">
+                        <h1 class="titulo">Selecciona la unidad a convertir a Newton: </h1>
+                    </div>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <div class="opcionesF" id="opcionesF">
+                    <a href="#" class="opcionF" id="calLibraF">
+                        <div class="content-opcionF">
+                            <img src="https://static.vecteezy.com/system/resources/previews/001/205/793/non_2x/weight-lifting-png.png" alt="">
+                            <div class="text">
+                                <h2 class="titulo">Libra fuerza (lbf)</h2>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="opcionF" id="calPoundal">
+                        <div class="content-opcionF">
+                            <img src="https://static.vecteezy.com/system/resources/previews/001/205/793/non_2x/weight-lifting-png.png" alt="">
+                            <div class="text">
+                                <h2 class="titulo">Poundal (pdl)</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <input type="hidden" name="medida" id="input-medida" value="">
+        </form>
+    </div>
+
+    <div id="calPresion">
+        <form action="" >
+            <div class="selectbox">
+                <div class="seleccionP" id="seleccionP">
+                    <div class="content-seleccionP">
+                        <h1 class="titulo">Selecciona la unidad a convertir a Libra por pulgada al cuadrado:</h1>
+                    </div>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <div class="opcionesP" id="opcionesP">
+                    <a href="#" class="opcionP" id="calPascal">
+                        <div class="content-opcionP">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2562/2562368.png" alt="">
+                            <div class="text">
+                                <h2 class="titulo">Pascal (Pa)</h2>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="opcionP" id="calAtmosfera">
+                        <div class="content-opcionP">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2562/2562368.png" alt="">
+                            <div class="text">
+                                <h2 class="titulo">Atmósfera (atm)</h2>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="opcionP" id="calNewtonM">
+                        <div class="content-opcionP">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2562/2562368.png" alt="">
+                            <div class="text">
+                                <h2 class="titulo">Newton por metros cuadrados (N/m<sup>2</sup>)</h2>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="opcionP" id="calPoundI">
+                        <div class="content-opcionP">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2562/2562368.png" alt="">
+                            <div class="text">
+                                <h2 class="titulo">Pound-force/sqare inch (PSI)</h2>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="opcionP" id="calBar">
+                        <div class="content-opcionP">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2562/2562368.png" alt="">
+                            <div class="text">
+                                <h2 class="titulo">Bar</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <input type="hidden" name="medida" id="input-medida" value="">
+        </form>
+    </div>
+
+    <div id="calPotencia">
+        <form action="" >
+            <div class="selectbox">
+                <div class="seleccionPO" id="seleccionPO">
+                    <div class="content-seleccionPO">
+                        <h1 class="titulo">Selecciona la unidad a convertir a Vatio: </h1>
+                    </div>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <div class="opcionesPO" id="opcionesPO">
+                    <a href="#" class="opcionPO" id="calHose">
+                        <div class="content-opcionPO">
+                            <img src="https://hosrojas.files.wordpress.com/2015/05/potenciacap2.gif" alt="">
+                            <div class="text">
+                                <h2 class="titulo">HosePower (HP)</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <input type="hidden" name="medida" id="input-medida" value="">
+        </form>
+    </div>
+
+    <div id="calculadoraL1">
+        <div id="cal1">
+            <div id="coversion">
+                <label type="number">Pulgada(s)</label>
+                <input type="number" id="pulgada">
+            </div>
+            <div id="coversion">
+                <label type="number">Metro(s)</label>
+                <input type="number" id="metrosP">
+            </div>
+        </div>
+    </div>
+
+    <div id="calculadoraL2">
+        <div id="cal1">
+            <div id="coversion">
+                <label type="number">Pie(s)</label>
+                <input type="number" id="pies">
+            </div>
+            <div id="coversion">
+                <label type="number">Metro(s)</label>
+                <input type="number" id="metrosPI">
+            </div>
+        </div>
+    </div>
+
+    <div id="calculadoraL3">
+        <div id="cal1">
+            <div id="coversion">
+                <label type="number">Yarda(s)</label>
+                <input type="number" id="yarda">
+            </div>
+            <div id="coversion">
+                <label type="number">Metro(s)</label>
+                <input type="number" id="metrosY">
+            </div>
+        </div>
+    </div>
+
+    <div id="calculadoraL4">
+        <div id="cal1">
+            <div id="coversion">
+                <label type="number">Braza(s)</label>
+                <input type="number" id="braza">
+            </div>
+            <div id="coversion">
+                <label type="number">Metro(s)</label>
+                <input type="number" id="metrosB">
+            </div>
+        </div>
+    </div>
+
+    <div id="calculadoraL5">
+        <div id="cal1">
+            <div id="coversion">
+                <label type="number">Milla(s)</label>
+                <input type="number" id="milla">
+            </div>
+            <div id="coversion">
+                <label type="number">Metro(s)</label>
+                <input type="number" id="metrosM">
+            </div>
+        </div>
+    </div>
+
+    <div id="calculadoraM1">
+        <div id="cal1">
+            <div id="coversion">
+                <label type="number">Onza(s)</label>
+                <input type="number" id="onza">
+            </div>
+            <div id="coversion">
+                <label type="number">Kilogramos(s)</label>
+                <input type="number" id="kilogramosO">
+            </div>
+        </div>
+    </div>
+
+    <div id="calculadoraM2">
+        <div id="cal1">
+            <div id="coversion">
+                <label type="number">Libra(s)</label>
+                <input type="number" id="libra">
+            </div>
+            <div id="coversion">
+                <label type="number">Kilogramo(s)</label>
+                <input type="number" id="kilogramosL">
+            </div>
+        </div>
+    </div>
+
+    <div id="calculadoraT1">
+        <div id="cal1">
+            <div id="coversion">
+                <label type="number">Año(s)</label>
+                <input type="number" id="año">
+            </div>
+            <div id="coversion">
+                <label type="number">Segundo(s)</label>
+                <input type="number" id="segundoA">
+            </div>
+        </div>
+    </div>
+
+    <div id="calculadoraT2">
+        <div id="cal1">
+            <div id="coversion">
+                <label type="number">Día(s)</label>
+                <input type="number" id="dia">
+            </div>
+            <div id="coversion">
+                <label type="number">Segundo(s)</label>
+                <input type="number" id="segundoD">
+            </div>
+        </div>
+    </div>
+
+    <div id="calculadoraT3">
+        <div id="cal1">
+            <div id="coversion">
+                <label type="number">Hora(s)</label>
+                <input type="number" id="hora">
+            </div>
+            <div id="coversion">
+                <label type="number">Segundo(s)</label>
+                <input type="number" id="segundoH">
+            </div>
+        </div>
+    </div>
+
+    <div id="calculadoraT4">
+        <div id="cal1">
+            <div id="coversion">
+                <label type="number">Minuto(s)</label>
+                <input type="number" id="minuto">
+            </div>
+            <div id="coversion">
+                <label type="number">Segundo(s)</label>
+                <input type="number" id="segundoM">
+            </div>
+        </div>
+    </div>
+
+    <div id="calculadoraT5">
+        <div id="cal1">
+            <div id="coversion">
+                <label type="number">Hercio(s)</label>
+                <input type="number" id="hercio">
+            </div>
+            <div id="coversion">
+                <label type="number">Segundo(s)</label>
+                <input type="number" id="segundoHZ">
+            </div>
+        </div>
+    </div>
+
+    <div id="calculadoraF1">
+        <div id="cal1">
+            <div id="coversion">
+                <label type="number">Libra(s) fuerza</label>
+                <input type="number" id="librafuerza">
+            </div>
+            <div id="coversion">
+                <label type="number">Newton(s)</label>
+                <input type="number" id="newtonL">
+            </div>
+        </div>
+    </div>
+
+    <div id="calculadoraF2">
+        <div id="cal1">
+            <div id="coversion">
+                <label type="number">Poundal(s)</label>
+                <input type="number" id="poudal">
+            </div>
+            <div id="coversion">
+                <label type="number">Newton(s)</label>
+                <input type="number" id="newtonP">
+            </div>
+        </div>
+    </div>
+
+    <div id="calculadoraP1">
+        <div id="cal1">
+            <div id="coversion">
+                <label type="number">Libra(S) por pulgada al cuadrado</label>
+                <input type="number" id="librapulgadaPA">
+            </div>
+            <div id="coversion">
+                <label type="number">Pascal(es)</label>
+                <input type="number" id="pascal">
+            </div>
+        </div>
+    </div>
+
+    <div id="calculadoraP2">
+        <div id="cal1">
+            <div id="coversion">
+                <label type="number">Libra(S) por pulgada al cuadrado</label>
+                <input type="number" id="librapulgadaATM">
+            </div>
+            <div id="coversion">
+                <label type="number">Atmósfera(s)</label>
+                <input type="number" id="atmosfera">
+            </div>
+        </div>
+    </div>
+
+    <div id="calculadoraP3">
+        <div id="cal1">
+            <div id="coversion">
+                <label type="number">Libra(S) por pulgada al cuadrado</label>
+                <input type="number" id="librapulgadaNM">
+            </div>
+            <div id="coversion">
+                <label type="number">Newton(s) por metros cuadrados</label>
+                <input type="number" id="newtonmetros">
+            </div>
+        </div>
+    </div>
+
+    <div id="calculadoraP4">
+        <div id="cal1">
+            <div id="coversion">
+                <label type="number">Libra(S) por pulgada al cuadrado</label>
+                <input type="number" id="librapulgadaPQI">
+            </div>
+            <div id="coversion">
+                <label type="number">Pound(s)-force/sqare inch</label>
+                <input type="number" id="poundForce">
+            </div>
+        </div>
+    </div>
+
+    <div id="calculadoraP5">
+        <div id="cal1">
+            <div id="coversion">
+                <label type="number">Libra(S) por pulgada al cuadrado</label>
+                <input type="number" id="librapulgadaB">
+            </div>
+            <div id="coversion">
+                <label type="number">Bar(s)</label>
+                <input type="number" id="bar">
+            </div>
+        </div>
+    </div>
+
+    <div id="calculadoraPO">
+        <div id="cal1">
+            <div id="coversion">
+                <label type="number">HosePower(s)</label>
+                <input type="number" id="hose">
+            </div>
+            <div id="coversion">
+                <label type="number">Vatio(s)</label>
+                <input type="number" id="vatio">
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
+
+<!-- Web Master: Jordan Medina Ortiz -->
