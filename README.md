@@ -33,7 +33,7 @@
   </ul>
   
   <ul>
-    <li>Al seleccionar la magnitud deseada se integrará a la página una tabla de conerverión de la magnitud antes seleccionada y los prefijos de la misma.
+    <li>Al seleccionar la magnitud deseada se integrará a la página una tabla de converión de la magnitud antes seleccionada al Sistema Ingles y los prefijos de la misma.
       <div align="center">
         <img src="https://github.com/JordanMedinaOrtiz/Proyecto-Fisica/blob/main/tablas.png" width="50%">
       </div>
