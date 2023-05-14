@@ -25,6 +25,38 @@ Y en la parte final encontraran otro menu si es que tienes seleccionada alguna m
 <div>
   <h3 align="center">En la página podrás encontrar</h3>
   <ul>
-    <li>Preloader</li>
+    <li>Preloader
+      <div align="center">
+        <img src="https://github.com/JordanMedinaOrtiz/Proyecto-Fisica/blob/main/preloader.png" width="50%">
+      </div>
+    </li>
+    
+    <li>Menu para seleccionar una magnitud fisica.
+      <div align="center">
+        <img src="https://github.com/JordanMedinaOrtiz/Proyecto-Fisica/blob/main/seleccion.png" width="50%">
+      </div>
+    </li>
+    
+    <li>Al seleccionar la magnitud deseada se integrará a la página una tabla de conerverión de la magnitud antes seleccionada y los prefijos de la misma.
+      <div align="center">
+        <img src="https://github.com/JordanMedinaOrtiz/Proyecto-Fisica/blob/main/tablas.png" width="50%">
+      </div>
+     </li>
+    
+    <li>Ejercicos para reforzar el conocimiento.
+      <p>Si la respuesta es correcta el borde se colocara verde, si es incorrecta el borde se colocara rojo.</p>
+      <div align="center">
+        <img src="https://github.com/JordanMedinaOrtiz/Proyecto-Fisica/blob/main/ejercicios.png" width="50%">
+      </div>
+     </li>
+    
+    <li>Un menu para seleccionar la conversión de unidades.
+      <p>Para poder seleccionar esta opción deberás seleccionar antes una magintud en la primera sección.</p>
+      <p>La calculadora se encontrara al final de la página.</p>
+      <div align="center">
+        <img src="https://github.com/JordanMedinaOrtiz/Proyecto-Fisica/blob/main/seleccion2.png" width="50%">
+      </div>
+    </li> 
+      
   </ul>
 </div>
