@@ -59,8 +59,8 @@
   </ul>
   
   <ul>
-    <li>Calculadora de converisón de unidades del Sistema Internacional al Sistema Ingles.</li>
-    <p>Se podrá hacer la conversión de la unidad del Sitema Internacional a la unidades del Sistema Ingles antes seleccionada.</p>
+    <li>Calculadora de conversión de unidades del Sistema Internacional al Sistema Ingles.</li>
+    <p>Se podrá hacer la conversión de la unidad del Sitema Internacional a la unidades del Sistema Ingles antes seleccionada. </p> 
     <p>La calculadora se encontrara al final de la página.</p>
     <div align="center">
         <img src="https://github.com/JordanMedinaOrtiz/Proyecto-Fisica/blob/main/calculadora.png" width="50%">
