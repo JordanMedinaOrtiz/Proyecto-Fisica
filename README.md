@@ -71,5 +71,5 @@
 ---
 
 <div>
-  <a href="https://jordanportafoliodeevidencias.com/proyectofisica/proyectofisica.html"><h3>Ir a página</h3></a>
+  <h3><a href="https://jordanportafoliodeevidencias.com/proyectofisica/proyectofisica.html">Ir a página</a></h3>
 </div>
