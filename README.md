@@ -8,9 +8,9 @@
 
 <div align="center">
   <h3>Para la realización de la página se utilizo:</h2>
-  <img src="https://github.com/vorillaz/devicons/raw/master/!PNG/html5.png" alt="HTML5">
-  <img src="https://github.com/vorillaz/devicons/raw/master/!PNG/css3.png" alt="CSS3">
-  <img src="https://github.com/vorillaz/devicons/blob/master/!PNG/javascript.png" alt="JavaScript">
+  <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" alt="HTML5" title="HTML5" width="40px">
+ <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-original.svg" alt="CSS3" title="CSS3" width="40px">
+  <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript" width="40px">
 </div>
 
 ---
